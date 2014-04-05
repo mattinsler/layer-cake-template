@@ -1,0 +1,28 @@
+{
+  "name": "layer-cake-template",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "scripts": {
+    "start": "layer-cake server",
+    "console": "layer-cake console"
+  },
+  "dependencies": {
+    "http-routes-layer": "0.0.3",
+    "q": "^1.0.1",
+    "awesomebox-layer": "0.0.6",
+    "layer-cake": "0.0.5",
+    "express": "^3.5.1",
+    "awesomebox-core": "^0.3.0"
+  },
+  "plugins": [
+    "http-routes-layer",
+    "awesomebox-layer",
+    "./plugins/delayed-q-render",
+    "./plugins/respond-with"
+  ]
+}
